@@ -1,8 +1,9 @@
 ---
 title: Authentic Trip
-publishDate: 2020-03-04 00:00:00
+publishDate: 2024-02-15 00:00:00
 img: /assets/authentictrip.png
 img_alt: Gestionnaire de voyage
+class: zoomable
 description: |
   Projet d'école. Nous avons développé un assistant d'aide à la conception de séjours entièrement personnalisés.
 tags:
@@ -11,7 +12,7 @@ tags:
   - Assistant
 ---
 
-# <a href="https://authentic-trip.fr/">Authentic Trip</a>
+# <a href="https://authentic-trip.fr/" target="_blank">Authentic Trip</a>
 
 Authentic Trip est une marketplace agrégée d'un assistant d'aide à la conception de séjours entièrement personnalisés et authentiques. Destinés aux passionnés du terroir français souhaitant découvrir nos régions autrement. Nous regroupons à travers notre service, toute la qualité du savoir-faire en France, ainsi que tous ses trésors culturels et naturels.
 
@@ -38,3 +39,51 @@ Après avoir validé tous les points, l'assistant génère un carnet de séjours
 - Twig
 - MySQL
 - GitHub
+
+<style>
+.container {
+  position: relative;
+}
+
+.zoomable {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.zoomable:hover {
+  transform: scale(1.1); /* Changer le facteur d'agrandissement */
+}
+
+.zoomable.zoomed {
+  transform: scale(1.7); /* Changer le facteur d'agrandissement */
+  z-index: 9999;
+}
+
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const zoomableImages = document.querySelectorAll('.zoomable');
+
+  zoomableImages.forEach(image => {
+    image.addEventListener('click', function () {
+      if (!this.classList.contains('zoomed')) {
+        this.classList.add('zoomed');
+      } else {
+        this.classList.remove('zoomed');
+      }
+    });
+  });
+
+  
+  document.addEventListener('click', function (event) {
+    
+    if (!event.target.closest('.zoomed')) {
+      zoomableImages.forEach(image => {
+        image.classList.remove('zoomed');
+      });
+    }
+  });
+});
+
+</script>

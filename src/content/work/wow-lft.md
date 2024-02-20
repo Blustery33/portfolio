@@ -1,22 +1,117 @@
 ---
-title: h2.0
-publishDate: 2019-10-02 00:00:00
-img: /assets/stock-4.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+title: Wow Lft
+publishDate: 2024-02-15 00:00:00
+img: /assets/wowlft.png
+img_alt: Gestionnaire de recrutement avec l'api world of warcraft.
+class: zoomable
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Projet personnel Backend
 tags:
-  - Design
-  - Branding
+  - Express JS
+  - API
+  - OAuth
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+> Wow Lft
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+Wow Lft est un mini projet personnel pour jouer avec l'api de world of warcraft. J'ai fait le choix d'utiliser
+Express JS pour découvrir et apprendre ce framework back.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+&nbsp;
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Pour ce projet j'ai dû travailler avec l'authentification Oauth pour pouvoir donner à l'utilisateur la possibilité
+de se connecter avec son compte World of warcraft
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+&nbsp;
+
+<div class="container">
+<img src="/assets/connexionOauth.png" id="image" alt="image" class="zoomable">
+</div>
+
+&nbsp;
+&nbsp;
+
+Une fois la connexion établie, j'avais accès à son profil en faisant appel à la première
+url API pour récupérer toutes les autres url des personnages du compte. J'ai donc bouclé sur toutes les url dont j'avais besoin
+pour récupérer certaines informations de chaque personnage et les enregistrer dans la base de données
+
+&nbsp;
+&nbsp;
+
+<div class="container">
+<img src="/assets/wow-url.png" id="image" alt="image" class="zoomable">
+</div>
+
+&nbsp;
+&nbsp;
+
+<strong>Pourquoi enregistrer les données en base de données ?</strong>
+&nbsp;
+
+Tout simplement pour éviter à chaque fois que l'utilisateur veut voir ses personnages de faire un appel API,
+ce qui garantit grandement la vitesse de chargement. Car comme on le sait un appel API peut prendre plusieurs secondes avant de s'exécuter
+
+&nbsp;
+&nbsp;
+
+<div class="container">
+<img src="/assets/bdd-personnage.png" id="image" alt="image" class="zoomable">
+</div>
+
+#### Technologies utilisées
+
+- Node JS
+- Express JS
+- Oauth
+- MongoDB
+- Api World of warcraft
+
+
+
+<style>
+.container {
+  position: relative;
+}
+
+.zoomable {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.zoomable:hover {
+  transform: scale(1.1); /* Changer le facteur d'agrandissement */
+}
+
+.zoomable.zoomed {
+  transform: scale(1.7); /* Changer le facteur d'agrandissement */
+  z-index: 9999;
+}
+
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const zoomableImages = document.querySelectorAll('.zoomable');
+
+  zoomableImages.forEach(image => {
+    image.addEventListener('click', function () {
+      if (!this.classList.contains('zoomed')) {
+        this.classList.add('zoomed');
+      } else {
+        this.classList.remove('zoomed');
+      }
+    });
+  });
+
+  
+  document.addEventListener('click', function (event) {
+    
+    if (!event.target.closest('.zoomed')) {
+      zoomableImages.forEach(image => {
+        image.classList.remove('zoomed');
+      });
+    }
+  });
+});
+
+</script>

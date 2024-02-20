@@ -16,7 +16,7 @@ interface Props {
 // Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
 // https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
-	const projets = await getCollection('projets');
+	const projets = await getCollection('work');
 	return projets.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
@@ -36,16 +36,31 @@ const { Content } = await entry.render();
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
-								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
+								{entry.data["tags"].map((t: string) => <Pill>{t}</Pill>)}
+
+								<style>
+									.pill {
+										display: flex;
+										padding: 0.5rem 1rem;
+										gap: 0.5rem;
+										color: var(--accent-text-over);
+										border: 1px solid var(--accent-regular);
+										background-color: var(--accent-regular);
+										border-radius: 999rem;
+										font-size: var(--text-md);
+										line-height: 1.35;
+										white-space: nowrap;
+									}
+								</style>
 							</div>
-							<p class="description">{entry.data.description}</p>
+							<p class="description"><strong>{entry.data.description}</strong></p>
 						</div>
 					</Hero>
 				</div>
 			</header>
 			<main class="wrapper">
 				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					{entry.data.img && <img src={entry.data.img} class={entry.data.class} alt={entry.data.img_alt || ''} />}
 					<div class="content">
 						<Content />
 					</div>

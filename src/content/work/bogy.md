@@ -1,8 +1,9 @@
 ---
 title: Bogy CRM ( Gestion utilisateur )
-publishDate: 2020-03-02 00:00:00
+publishDate: 2024-02-15 00:00:00
 img: /assets/crm-gestion-utilisateur.png
 img_alt: une gestion utilisateur dans un crm
+class: zoomable
 description: | 
   J'ai développé une interface de gestion d'utilisateur complètement dynamique.
 tags:
@@ -16,12 +17,13 @@ tags:
 
 > Bogy
 
-BOGY est une interface de gestion d’élèves qui concerne l’avancement de leur formation sur la plateforme d’apprentissage. Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. Il gère aussi le paiement en ligne, la comptabilité et toutes les statistiques de vente  (autofinancement, CPF, rétractation, etc).    
+BOGY est une interface de gestion d’élèves qui concerne l’avancement de leur formation sur la plateforme d’apprentissage. Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. Il gère aussi le paiement en ligne, la comptabilité et toutes les statistiques de vente  (autofinancement, CPF, rétractation, etc). 
 
 &nbsp;
 &nbsp;
-
-<img src="/assets/photo-bogy-1.png">
+<div class="container">
+<img src="/assets/photo-bogy-1.png" id="image" alt="image" class="zoomable">
+</div>
 
 &nbsp;
 &nbsp;
@@ -34,8 +36,9 @@ Afin d’atteindre cette mission, j’étais en charge de la création d’une i
 
 &nbsp;
 &nbsp;
-
-<img src="/assets/photo-bogy-2.png">
+<div class="container">
+<img src="/assets/photo-bogy-2.png" id="image" alt="image" class="zoomable">
+</div>
 
 &nbsp;
 &nbsp;
@@ -54,3 +57,50 @@ Afin d’atteindre cette mission, j’étais en charge de la création d’une i
 [//]: # (- We noted this)
 
 [//]: # (- And also this other point)
+<style>
+.container {
+  position: relative;
+}
+
+.zoomable {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.zoomable:hover {
+  transform: scale(1.1); /* Changer le facteur d'agrandissement */
+}
+
+.zoomable.zoomed {
+  transform: scale(1.7); /* Changer le facteur d'agrandissement */
+  z-index: 9999;
+}
+
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const zoomableImages = document.querySelectorAll('.zoomable');
+
+  zoomableImages.forEach(image => {
+    image.addEventListener('click', function () {
+      if (!this.classList.contains('zoomed')) {
+        this.classList.add('zoomed');
+      } else {
+        this.classList.remove('zoomed');
+      }
+    });
+  });
+
+  
+  document.addEventListener('click', function (event) {
+    
+    if (!event.target.closest('.zoomed')) {
+      zoomableImages.forEach(image => {
+        image.classList.remove('zoomed');
+      });
+    }
+  });
+});
+
+</script>
