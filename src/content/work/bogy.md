@@ -1,5 +1,5 @@
 ---
-title: Bogy CRM ( Gestion utilisateur )
+title: CRM entreprise ( Gestion utilisateur )
 publishDate: 2024-02-15 00:00:00
 img: /assets/crm-gestion-utilisateur.png
 img_alt: une gestion utilisateur dans un crm
@@ -12,12 +12,15 @@ tags:
   - Live component
 ---
 
-## Bogy CRM entreprise
+## CRM entreprise
 &nbsp;
 
-> Bogy
+L'application est une interface de gestion d’élèves qui concerne l’avancement de leur formation sur la plateforme d’apprentissage.
+L'application regroupe toutes les données des élèves.
 
-BOGY est une interface de gestion d’élèves qui concerne l’avancement de leur formation sur la plateforme d’apprentissage. Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. Il gère aussi le paiement en ligne, la comptabilité et toutes les statistiques de vente  (autofinancement, CPF, rétractation, etc). 
+[//]: # (Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. )
+
+[//]: # (Il gère aussi le paiement en ligne, la comptabilité et toutes les statistiques de vente  &#40;autofinancement, CPF, rétractation, etc&#41;. )
 
 &nbsp;
 &nbsp;
