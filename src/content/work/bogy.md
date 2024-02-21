@@ -1,5 +1,5 @@
 ---
-title: CRM entreprise ( Gestion utilisateur )
+title: CRM entreprise (Gestion utilisateur)
 publishDate: 2024-02-15 00:00:00
 img: /assets/crm-gestion-utilisateur.png
 img_alt: une gestion utilisateur dans un crm
