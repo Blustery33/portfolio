@@ -5,7 +5,7 @@ img: /assets/accueil-dyma.png
 img_alt: dyma-moutmout
 class: zoomable
 description: | 
-  Developpement d'une application similaire à twitter pour apprendre Node.js / Express
+  Developpement d'une application similaire à Twitter pour apprendre Node.js / Express
 tags:
   - Node JS
   - Express
@@ -15,8 +15,8 @@ tags:
 ## <a href="https://dyma-moutmout.fr" target="_blank">Dyma-moutmout</a>
 &nbsp;
 
-Est une application que j'ai développé en Node.js sous le framework Express.
-Elle reprend les grands principes de twitter
+Dyma-moutmout est une application que j'ai développé en Node.js sous le framework Express.
+Elle reprend les grands principes de Twitter
 
 [//]: # (Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. )
 
@@ -32,15 +32,21 @@ Elle reprend les grands principes de twitter
 &nbsp;
 &nbsp;
 
-### Résumer
+### Résumé
 
-L’objectif de ce projet était de me former en Node.js. J'ai donc mis en place beaucoup de fonctionnalités pour apprendre
-et m'entraîner avec comme mission faire une application twitter.
+L’objectif de ce projet était de me former en Node.js. J'ai donc mis en place de multiples fonctionnalités pour apprendre
+et pour m'entraîner avec comme mission faire une application Twitter.
 
 <div class="container">
 </div>
-J'ai pu donc mettre en place, l'authentification avec JWT. Socket.io pour le chat. Nodemailer pour le mot de passe oublié
-et l'activation du compte pour avoir le status "vérifié". Multer pour l'upload d'image de profil etc.
+<div class="margin-ul">
+
+- l'authentification : JWT
+- le chat : Socket.io. 
+- mot de passe oublié et activation de compte (statut vérifié) : Nodemailer / sweetalert2
+- upload d'image de profil : Multer
+
+</div>
 
 &nbsp;
 &nbsp;
@@ -80,6 +86,9 @@ et l'activation du compte pour avoir le status "vérifié". Multer pour l'upload
 
 [//]: # (- And also this other point)
 <style>
+.margin-ul ul{
+  width: 110%;
+}
 .container {
   position: relative;
 }
