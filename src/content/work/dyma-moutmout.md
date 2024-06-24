@@ -5,7 +5,7 @@ img: /assets/accueil-dyma.png
 img_alt: dyma-moutmout
 class: zoomable
 description: | 
-  Developpement d'une application similaire à Twitter pour apprendre Node.js / Express
+  Developpement d'une application similaire à Twitter
 tags:
   - Node JS
   - Express
@@ -34,8 +34,8 @@ Elle reprend les grands principes de Twitter
 
 ### Résumé
 
-L’objectif de ce projet était de me former en Node.js. J'ai donc mis en place de multiples fonctionnalités pour apprendre
-et pour m'entraîner avec comme mission faire une application Twitter.
+L’objectif de ce projet était de continuer de me former en Node.js. J'ai donc mis en place de multiples fonctionnalités pour apprendre
+et m'entraîner avec comme mission faire une application Twitter.
 
 <div class="container">
 </div>
