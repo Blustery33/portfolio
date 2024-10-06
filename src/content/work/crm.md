@@ -1,5 +1,5 @@
 ---
-title: CRM entreprise (Gestion utilisateur)
+title: CRM Youschool (Gestion utilisateur)
 publishDate: 2024-02-15 00:00:00
 img: /assets/crm-gestion-utilisateur.png
 img_alt: une gestion utilisateur dans un crm
@@ -12,7 +12,7 @@ tags:
   - Live component
 ---
 
-## CRM entreprise
+## CRM Youschool
 &nbsp;
 
 L'application est une interface de gestion d’élèves qui concerne l’avancement de leur formation sur la plateforme d’apprentissage.

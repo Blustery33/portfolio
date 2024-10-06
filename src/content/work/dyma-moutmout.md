@@ -1,5 +1,5 @@
 ---
-title: Dyma-moutmout
+title: Réseau social semblable à Twitter
 publishDate: 2024-04-23 00:00:00
 img: /assets/accueil-dyma.png
 img_alt: dyma-moutmout

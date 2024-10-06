@@ -15,7 +15,7 @@ tags:
 > Wow Lft
 
 Wow Lft est un mini projet personnel pour jouer avec l'api de world of warcraft. J'ai fait le choix d'utiliser
-Express JS pour découvrir et apprendre ce framework back.
+Express.js pour découvrir et apprendre ce framework back.
 
 &nbsp;
 

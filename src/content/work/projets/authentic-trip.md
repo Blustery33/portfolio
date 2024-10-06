@@ -1,5 +1,5 @@
 ---
-title: Authentic Trip
+title: Application web de voyage
 publishDate: 2024-02-15 00:00:00
 img: /assets/authentictrip.png
 img_alt: Gestionnaire de voyage
