@@ -16,7 +16,7 @@ Lien vers le repo Github :
 ## <a href="https://github.com/Blustery33/docker-production" target="_blank">Docker-project</a>
 &nbsp;
 
-Docker-project est une base complète pour une nouvelle application dans un environnement Docker.
+Docker-project est une base complète pour une nouvelle application dans un environnement <strong>Docker</strong>.
 
 [//]: # (Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. )
 

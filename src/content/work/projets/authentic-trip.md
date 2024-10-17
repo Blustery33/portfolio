@@ -14,7 +14,9 @@ tags:
 
 # <a href="https://authentic-trip.fr/" target="_blank">Authentic Trip</a>
 
-Authentic Trip est une marketplace agrégée d'un assistant d'aide à la conception de séjours entièrement personnalisés et authentiques. Destinés aux passionnés du terroir français souhaitant découvrir nos régions autrement. Nous regroupons à travers notre service, toute la qualité du savoir-faire en France, ainsi que tous ses trésors culturels et naturels.
+Authentic Trip est une marketplace agrégée d'un assistant d'aide à la conception de séjours entièrement personnalisés et authentiques. 
+Destinés aux passionnés du terroir français souhaitant découvrir nos régions autrement. 
+Nous regroupons à travers notre service, toute la qualité du savoir-faire en France, ainsi que tous ses trésors culturels et naturels.
 
 &nbsp;
 

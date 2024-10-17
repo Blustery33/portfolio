@@ -1,11 +1,11 @@
 ---
 title: Réseau social semblable à Twitter
-publishDate: 2024-04-23 00:00:00
+publishDate: 2024-10-17 00:00:00
 img: /assets/accueil-dyma.png
 img_alt: dyma-moutmout
 class: zoomable
 description: | 
-  Developpement d'une application similaire à Twitter
+  Développement d'une application similaire à Twitter
 tags:
   - Node JS
   - Express
@@ -15,7 +15,7 @@ tags:
 ## <a href="https://dyma-moutmout.fr" target="_blank">Dyma-moutmout</a>
 &nbsp;
 
-Dyma-moutmout est une application que j'ai développé en Node.js sous le framework Express.
+Dyma-moutmout est une application que j'ai développé en <strong>Node.js</strong> sous le framework <strong>Express</strong>.
 Elle reprend les grands principes de Twitter
 
 [//]: # (Leur donnée utilisateur est remplie en ligne par les conseillers d’admission, qui appellent les prospects afin de clôturer des ventes. )
@@ -34,7 +34,7 @@ Elle reprend les grands principes de Twitter
 
 ### Résumé
 
-L’objectif de ce projet était de continuer de me former en Node.js. J'ai donc mis en place de multiples fonctionnalités pour apprendre
+L’objectif de ce projet était de continuer de me former en <strong>Node.js</strong>. J'ai donc mis en place de multiples fonctionnalités pour apprendre
 et m'entraîner avec comme mission faire une application Twitter.
 
 <div class="container">
