@@ -1,6 +1,6 @@
 ---
 title: LeBonZaap
-publishDate: 2024-12-29 00:00:00
+publishDate: 2024-10-15 00:00:00
 img: /assets/Main-page-offer.png
 img_alt: Page d'accueil des offres
 class: zoomable

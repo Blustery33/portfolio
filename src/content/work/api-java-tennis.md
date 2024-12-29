@@ -1,6 +1,6 @@
 ---
 title: Tennis rankings API
-publishDate: 2024-10-15 00:00:00
+publishDate: 2024-10-17 00:00:00
 img: /assets/api-accueil-java.png
 img_alt: api-java-tennis
 class: zoomable
