@@ -2,70 +2,65 @@
 title: LeBonZaap
 publishDate: 2024-10-15 00:00:00
 img: /assets/Main-page-offer.png
-img_alt: Page d'accueil des offres
+img_alt: Page-d'accueil-des-offres
 class: zoomable
 description: |
-  Développement d'une plateforme d'échange de service pour jeux vidéos.
+  Développement d'une plateforme d'échange de service pour jeux vidéos
 tags:
-  - Java / Spring Boot
-  - React
+  - SpringBoot
+  - Java
   - Docker
-  - PostgreSQL
-  - Liquibase
 ---
 
-# <a href="https://github.com/Blustery33/LeBonZaapDemo" target="_blank">LeBonZaap</a>
+## <a class="h1-title" href="https://github.com/Blustery33/LeBonZaapDemo" target="_blank">LeBonZaap</a>
 
-LeBonZaap est une plateforme d’échange de services dédiée aux joueurs d’un même jeu vidéo.</br></br>
+LeBonZaap est une plateforme d’échange de services dédiée aux joueurs d’un même jeu vidéo.
+</br>
+</br>
 L’application permet aux utilisateurs de publier des offres et de proposer des services qu’ils souhaitent vendre, 
-en lien avec leur jeu préféré. Que ce soit pour des échanges d’objets virtuels, de l’entraide en jeu, ou des prestations personnalisées, LeBonZaap facilite la mise en relation entre joueurs passionnés.
+en lien avec leur jeu préféré. Que ce soit pour des échanges d’objets virtuels, de l’entraide en jeu, ou des prestations personnalisées, 
+LeBonZaap facilite la mise en relation entre joueurs passionnés.
 
 &nbsp;
 
 ### Un projet en Pair programming
 
-<p style="font-size: 22px;"><strong>Travailler en duo sur ce projet m’a permis de :</strong></p>
+<strong>Travailler en duo sur ce projet m’a permis de :</strong>
 
 - **Améliorer mes compétences techniques** en collaborant sur GitHub pour la gestion du code et des versions.  
-  <br>
+<br>
 - **Développer une meilleure organisation** en suivant l’avancement des tâches via Trello et en adoptant une approche agile.  
-  <br>
+<br>
 - **Renforcer ma capacité à communiquer et résoudre des problèmes**, en partageant des idées et en codant à deux en temps réel.
-  <br>
-  <br>
-<p>Les images ci-dessous montrent notre processus : dépôt GitHub collaboratif, tableau Trello et aperçus de l’application en développement.
-  <br>
-Ce projet reflète non seulement mes compétences techniques, mais aussi ma capacité à travailler efficacement 
-en équipe et à apprendre en continu dans un environnement collaboratif.</p>
+<br>
+<br>
+Les images ci-dessous montrent notre processus : dépôt <strong>GitHub</strong> collaboratif, tableau <strong>Trello</strong> et aperçus de l’application en développement.
+<br>
+<br>
+Ce projet reflète non seulement mes <strong>compétences techniques</strong>, mais aussi ma <strong>capacité à travailler efficacement en équipe</strong> et à apprendre en continu dans un environnement <strong>collaboratif</strong>.
 
 &nbsp;
 &nbsp;
 
 <div class="container">
-<div>
 <img src="/assets/trello-lebonzaap.png" id="image" alt="trello" class="zoomable">
 <div style="text-align: center"><span><strong>Trello</strong></span></div>
 </div>
-</div>
 
 &nbsp;
 &nbsp;
 
 <div class="container">
-<div>
 <img src="/assets/github-lebonzaap.png" id="image" alt="github" class="zoomable">
 <p style="text-align: center"><a href="https://github.com/Blustery33/LeBonZaapDemo" target="_blank"><span><strong>Github</strong></span></a></p>
 </div>
-</div>
 
 &nbsp;
 &nbsp;
 
 <div class="container">
-<div>
 <img src="/assets/offer-service.png" id="image" alt="service offre" class="zoomable">
 <div style="text-align: center"><span><strong>Morceau de code du service implémentation des offres</strong></span></div>
-</div>
 </div>
 
 &nbsp;
@@ -81,10 +76,8 @@ L’image ci-dessous présente un aperçu de la maquette réalisée.
 &nbsp;
 
 <div class="container">
-<div>
 <img src="/assets/figma-lebonzaap.png" id="image" alt="figma lebonzaap" class="zoomable">
 <div style="text-align: center"><span><strong>Figma</strong></span></div>
-</div>
 </div>
 
 &nbsp;
@@ -99,10 +92,8 @@ L’image ci-dessous illustre une phase de **test** effectuée durant le dévelo
 &nbsp;
 
 <div class="container">
-<div>
 <img src="/assets/test-lebonzaap.png" id="image" alt="test d'intégration création d'une offre" class="zoomable">
 <div style="text-align: center"><span><strong>Test d'intégration pour la création d'une offre</strong></span></div>
-</div>
 </div>
 
 &nbsp;
@@ -135,6 +126,11 @@ L’image ci-dessous illustre une phase de **test** effectuée durant le dévelo
 .zoomable.zoomed {
   transform: scale(1.7); /* Changer le facteur d'agrandissement */
   z-index: 9999;
+}
+@media (max-width: 320px) {
+  .h1-title{
+    font-size: 50px;
+  }
 }
 
 </style>

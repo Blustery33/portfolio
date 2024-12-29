@@ -12,7 +12,7 @@ tags:
   - Assistant
 ---
 
-# <a href="https://authentic-trip.fr/" target="_blank">Authentic Trip</a>
+# <a class="h1-title" href="https://authentic-trip.fr/" target="_blank">Authentic Trip</a>
 
 Authentic Trip est une marketplace agrégée d'un assistant d'aide à la conception de séjours entièrement personnalisés et authentiques. 
 Destinés aux passionnés du terroir français souhaitant découvrir nos régions autrement. 
@@ -60,6 +60,11 @@ Après avoir validé tous les points, l'assistant génère un carnet de séjours
 .zoomable.zoomed {
   transform: scale(1.7); /* Changer le facteur d'agrandissement */
   z-index: 9999;
+}
+@media (max-width: 320px) {
+  .h1-title{
+    font-size: 50px;
+  }
 }
 
 </style>
