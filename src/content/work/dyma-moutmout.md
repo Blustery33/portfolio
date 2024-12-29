@@ -1,6 +1,6 @@
 ---
 title: Réseau social semblable à Twitter
-publishDate: 2024-10-17 00:00:00
+publishDate: 2024-12-17 00:00:00
 img: /assets/accueil-dyma.png
 img_alt: dyma-moutmout
 class: zoomable
